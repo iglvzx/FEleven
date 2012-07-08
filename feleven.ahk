@@ -2,40 +2,39 @@
 #NoTrayIcon
 #NoEnv
 SetTitleMatchMode, 2
+StringCaseSense, Off
 
-param1 = %1%
-param2 = %2%
-param3 = %3%
+target = %1%
+window = %2%
 
-if (param1 = "--firefox")
+if (window = "")
 {
-    IniRead, window, firefox.ini, feleven, window
-    IniRead, target, firefox.ini, feleven, target
-    target := target . " " . param2
-    IniRead, startin, firefox.ini, feleven, startin
-}
-else if (param1 = "--gchrome")
-{
-    IniRead, window, gchrome.ini, feleven, window
-    IniRead, target, gchrome.ini, feleven, target
-    target := target . " " . param2
-    IniRead, startin, gchrome.ini, feleven, startin
-}
-else ; manual configuration
-{
-    window := param1
-    target := param2
-    startin := param3
+    IfInString, target, % "firefox.exe"
+    {
+        window := "ahk_class MozillaWindowClass"
+    }
+    IfInString, target, % "chrome.exe"
+    {
+        window := "ahk_class Chrome_WidgetWin_1"
+    }
+    IfInString, target, % "opera.exe"
+    {
+        window := "ahk_class OperaWindowClass"
+    }
+    IfInString, target, % "iexplore.exe"
+    {
+        window := "ahk_class IEFrame"
+    }
 }
 
-Run, %target%, %startin%
+Run, %target%
 
 WinWaitActive, %window%
 
 WinGetPos, X, Y, Width, Height, A
 if (Width = A_ScreenWidth && Height = A_ScreenHeight)
 {
-    ; window is alread fullscreen
+    ; window is already fullscreen
 }
 else
 {
