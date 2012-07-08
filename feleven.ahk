@@ -8,7 +8,7 @@ target = %1%
 window = %2%
 
 if (window = "")
-{
+{ ; built-in support
     IfInString, target, % "firefox.exe"
     {
         window := "ahk_class MozillaWindowClass"
