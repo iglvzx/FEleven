@@ -30,7 +30,7 @@ All additional parameters relating to the target application should be included 
 
 - Place `feleven` in a [%Path%](https://en.wikipedia.org/wiki/PATH_%28variable%29) directory!
 
-- Use `feleven` in a the **target** field of a shortcut (`.lnk`) file!
+- Use `feleven` in the **target** field of a shortcut (`.lnk`) file!
 
 ##Built-in Support
 
