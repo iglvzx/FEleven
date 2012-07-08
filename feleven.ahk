@@ -14,6 +14,13 @@ if (param1 = "--firefox")
     target := target . " " . param2
     IniRead, startin, firefox.ini, feleven, startin
 }
+else if (param1 = "--gchrome")
+{
+    IniRead, window, gchrome.ini, feleven, window
+    IniRead, target, gchrome.ini, feleven, target
+    target := target . " " . param2
+    IniRead, startin, gchrome.ini, feleven, startin
+}
 else ; manual configuration
 {
     window := param1
