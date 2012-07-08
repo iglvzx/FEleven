@@ -16,13 +16,21 @@ The result is being able to launch that application in fullscreen when it wasn't
 
         feleven "path\to\target.exe" "Window Title"
 
-**Tip:** Place `feleven` in a [%Path%](https://en.wikipedia.org/wiki/PATH_%28variable%29) directory!
+---
 
-**Note:** The `window-title` string parameter can be any substring in the application's window title.
+**Notes:**
 
-**Note:** All additional parameters relating to the target application should be included in **FEleven**'s first parameter:
+The `window-title` string parameter can be any substring in the application's window title.
+
+All additional parameters relating to the target application should be included in **FEleven**'s first parameter:
 
     feleven "path\to\target.exe parameter1 ..." "Window Title"
+
+##Tips
+
+- Place `feleven` in a [%Path%](https://en.wikipedia.org/wiki/PATH_%28variable%29) directory!
+
+- Use `feleven` in a the **target** field of a shortcut (`.lnk`) file!
 
 ##Built-in Support
 
