@@ -8,6 +8,14 @@ If an application does not have it's own `fullscreen` command line argument and 
 
 The result is being able to launch that application in fullscreen when it wasn't possible before.
 
+##Compatibility
+
+- Windows XP
+
+- Windows Vista
+
+- Windows 7
+
 ##Instructions
 
 1. **Download** the latest version of [`feleven.exe`](https://github.com/iglvzx/FEleven/downloads).
