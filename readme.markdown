@@ -11,10 +11,9 @@ The result is being able to launch that application in fullscreen when it wasn't
 ##Compatibility
 
 - Windows XP
-
 - Windows Vista
-
 - Windows 7
+- Windows 8
 
 ##Instructions
 
@@ -62,7 +61,7 @@ Currently, **FEleven** has built-in support for the following popular browsers, 
 
 ##Copyright
 
-&copy;2012 Izzy Galvez. All rights reserved.
+&copy;2012-2013 Izzy Galvez. All rights reserved.
 
 ##License
 
